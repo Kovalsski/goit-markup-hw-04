@@ -28,17 +28,17 @@ h1,
 h2,
 h3,
 h4,
-p{
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
 ul,
-ol{
+ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
-img{
+img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -48,7 +48,7 @@ body {
   background-color: var(--primary-text-color-theme-light);
   letter-spacing: 0.03em;
 }
-.section{
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -87,30 +87,29 @@ body {
   line-height: 1.2;
   color: var(--accent-color);
 }
-.page-navigation{
+.page-navigation {
   display: flex;
   align-items: center;
 }
-.page-header{
+.page-header {
   border-bottom: 1px solid var(--border-color);
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.header-box{
+.header-box {
   display: flex;
   justify-content: space-between;
 }
 .menu-list,
-.list-contact{
+.list-contact {
   display: flex;
 }
 .menu-item:not(:last-child),
-.logo
-{
-  margin-right:50px;
+.logo {
+  margin-right: 50px;
 }
-.mail-link{
+.mail-link {
   margin-right: 50px;
 }
 .menu-link {
@@ -130,6 +129,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-theme-light);
+  display: flex;
+  align-items: center;
 }
 .mail:hover,
 .mail:focus {
@@ -141,14 +142,34 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-theme-light);
+  display: flex;
+  align-items: center;
 }
 .contact-phone-number:hover,
 .contact-phone-number:focus {
   color: var(--accent-color);
 }
+.mail-icon, .phone-icon{
+  margin-right: 10px;
+}
+.mail-link:hover .icon-mail{
+  fill: var(--accent-color);
+}
+.phone-link:hover .phone-icon{
+  fill: var(--accent-color);
+}
 /* MAIN */
 .first-section {
+  background: rgba(47, 48, 58, 0.4);
   background-color: var(--no-name-text-color);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(../sekt.jpg);
+ 
 }
 .name-page {
   font-weight: 900;
@@ -175,7 +196,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.first-container{
+.first-container {
   display: flex;
   flex-wrap: wrap;
   width: 700px;
@@ -189,12 +210,12 @@ body {
   background: var(--accent-color);
 }
 /* soft=skills */
-.list-skils{
+.list-skils {
   display: flex;
   gap: 30px;
 }
-.skills-list{
-  flex-basis: calc((100% - 90px) / 4 );
+.skills-list {
+  flex-basis: calc((100% - 90px) / 4);
 }
 .soft-skills-item {
   font-weight: 700;
@@ -207,8 +228,16 @@ body {
 .soft-skills-link {
   font-size: 14px;
   line-height: 1.71;
-
   color: var(--secondary-text-color-theme-light);
+}
+.soft-box{
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--back-color);
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
 .job {
   font-weight: 700;
@@ -218,22 +247,22 @@ body {
   color: var(--grey-color);
   margin-bottom: 50px;
 }
-.page-job{
+
+.page-job {
   padding-top: 0;
 }
-.job-page{
+.job-page {
   display: flex;
   gap: 30px;
-
 }
 .image-work {
   width: 370px;
   height: 294px;
 }
-.my-team{
+.my-team {
   margin-bottom: 50px;
 }
-.list-team{
+.list-team {
   display: flex;
   gap: 30px;
 }
@@ -248,7 +277,7 @@ body {
   width: 270px;
   height: 260px;
 }
-.team-info{
+.team-info {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -267,18 +296,50 @@ body {
   line-height: 1.18;
   text-align: center;
   color: var(--secondary-text-color-theme-light);
+  margin-bottom: 16px;
 }
 .team-box {
   background-color: var(--primary-text-color-theme-light);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team {
   background-color: var(--back-color);
 }
+.team-cont{
+  display: flex;
+}
+.list-icon{
+  margin-left: 34px;
+}
+.icon-job:hover {
+  fill: var(--accent-color);
+}
+.clients{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-family:var(--primary-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color:var(--primary-text-dark-color);
+}
+.clients-item{
+  display: flex;
+}
+.client-list{
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin-left: 30px;
+}
 /* footer */
 .footer-page {
   background: var(--no-name-text-color);
+  display: flex;
 }
 .logo-two {
   font-family: var(--secondary-text-font);
@@ -288,8 +349,10 @@ border-radius: 0px 0px 4px 4px;
   color: var(--primary-text-color-theme-light);
   margin-top: 60px;
 }
-.adress-footer{
+.adress-footer {
   margin-top: 20px;
+  display: flex;
+  align-items: baseline;
 }
 .maps-list {
   font-style: normal;
@@ -305,12 +368,11 @@ border-radius: 0px 0px 4px 4px;
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
-
 }
-.list-map{
+.list-map {
   margin-bottom: 9px;
 }
-.contact-phone-footer{
+.contact-phone-footer {
   margin-bottom: 60px;
 }
 .contact-phone-footer:focus,
@@ -320,9 +382,23 @@ border-radius: 0px 0px 4px 4px;
 .maps-text:focus {
   color: var(--accent-color);
 }
+.footer-icons{
+
+
+}
+.footer-invate{
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-text-color-theme-light)
+}
 
 /* Portfolio */
-.filther-btn{
+.filther-btn {
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -348,18 +424,18 @@ border-radius: 0px 0px 4px 4px;
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Project */
-.project-link{
+.project-link {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.project-list{
+.project-list {
   border-left: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
-  padding:20px 24px;
+  padding: 20px 24px;
 }
-.project{
+.project {
   margin-bottom: 4px;
 }
 
