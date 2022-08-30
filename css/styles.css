@@ -8,7 +8,8 @@
   --primary-font: "Roboto", sans-serif;
   --secondary-text-font: "Raleway", sans-serif;
   --back-color: #f5f4fa;
-  --border-color: #eee;
+  --border-color: #eee;  --primary-icon-color: rgba(175, 177, 184, 1);
+  --second-icon-color: #757575;
 }
 .menu-list .menu-link.current {
   color: var(--accent-color);
@@ -157,6 +158,9 @@ body {
 }
 .phone-link:hover .phone-icon{
   fill: var(--accent-color);
+}
+.mail-icon, .phone-icon{
+  fill:var(--second-icon-color)
 }
 /* MAIN */
 .first-section {
@@ -309,12 +313,33 @@ body {
 }
 .team-cont{
   display: flex;
+  justify-content: center;
+  column-gap: 10px;
 }
-.list-icon{
-  margin-left: 34px;
-}
-.icon-job:hover {
+
+.icon-job:hover{
   fill: var(--accent-color);
+}
+.icon-job{
+  fill: var(--primary-icon-color);
+}
+.team-cont-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--primary-text-color-theme-light);
+}
+.team-cont-icon:hover,
+.team-cont-icon:focus {
+  fill: var(--primary-text-color-theme-light);
+  background-color: var(--accent-color);
+}
+.team-cont-icon:hover .icon-job,
+.team-cont-icon:focus .icon-job {
+  fill: var(--primary-text-color-theme-light);
 }
 .clients{
   display: flex;
