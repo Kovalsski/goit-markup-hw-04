@@ -357,12 +357,36 @@ body {
 }
 .clients-item{
   display: flex;
+  gap: 30px;
 }
-.client-list{
+/* .client-list{
   border: 1px solid var(--border-color);
   border-radius: 4px;
   padding: 16px 32px;
   margin-left: 30px;
+} */
+.client-box-icon{
+  width: 170px;
+}
+.client-comp{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+.client-comp:hover .client-icon,
+.client-comp:focus .client-icon{
+  fill: var(--accent-color);
+}
+.client-comp:hover,
+.client-comp:focus {
+  border-color: var(--accent-color);
+}
+.client-icon{
+  fill: var(--second-icon-color);
 }
 /* footer */
 .footer-page {
