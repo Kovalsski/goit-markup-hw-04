@@ -200,6 +200,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.modal-open-btn:active{
+  background-color: #188CE8;
+}
 .first-container {
   display: flex;
   flex-wrap: wrap;
@@ -373,11 +376,11 @@ body {
   line-height: 1.19;
   color: var(--primary-text-color-theme-light);
   margin-top: 60px;
+  font-style: normal;
 }
 .adress-footer {
   margin-top: 20px;
-  display: flex;
-  align-items: baseline;
+  margin-right: 70px;
 }
 .maps-list {
   font-style: normal;
@@ -407,10 +410,6 @@ body {
 .maps-text:focus {
   color: var(--accent-color);
 }
-.footer-icons{
-
-
-}
 .footer-invate{
   font-family: var(--primary-font);
   font-weight: 700;
@@ -419,9 +418,29 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-text-color-theme-light)
+  color: var(--primary-text-color-theme-light);
+  margin-bottom: 20px;
 }
-
+.team-cont-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.icon-footer{
+  fill: var(--primary-text-color-theme-light);
+}
+.team-cont-icons:hover,
+.team-cont-icons:focus{
+  background-color: var(--accent-color);
+}
+.footer-container{
+  display: flex;
+  align-items: baseline;
+}
 /* Portfolio */
 .filther-btn {
   display: flex;
