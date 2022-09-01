@@ -155,13 +155,17 @@ body {
 .contact-phone-number:focus {
   color: var(--accent-color);
 }
-.cont-icon {
+.mail-icon,
+.phone-icon {
   margin-right: 10px;
-  fill: var(--second-icon-color);
 }
 .page-cont:hover .cont-icon,
 .page-cont:focus .cont-icon {
   fill: var(--accent-color);
+}
+.mail-icon,
+.phone-icon {
+  fill: var(--second-icon-color);
 }
 /* MAIN */
 .first-section {
