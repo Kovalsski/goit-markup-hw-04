@@ -159,8 +159,8 @@ body {
 .phone-icon {
   margin-right: 10px;
 }
-.page-cont:hover .cont-icon,
-.page-cont:focus .cont-icon {
+.focus-cont:hover .cont-icon,
+.focus-cont:focus .cont-icon {
   fill: var(--accent-color);
 }
 .mail-icon,
