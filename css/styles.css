@@ -111,7 +111,7 @@ body {
 .logo {
   margin-right: 50px;
 }
-.mail-link {
+.page-cont {
   margin-right: 50px;
 }
 .page-cont{
@@ -155,19 +155,13 @@ body {
 .contact-phone-number:focus {
   color: var(--accent-color);
 }
-.mail-icon,
-.phone-icon {
+.cont-icon {
   margin-right: 10px;
+  fill: var(--second-icon-color);
 }
-.page-cont:hover .cont-icon{
-  fill: var(--accent-color);
-}
+.page-cont:hover .cont-icon,
 .page-cont:focus .cont-icon {
   fill: var(--accent-color);
-}
-.mail-icon,
-.phone-icon {
-  fill: var(--second-icon-color);
 }
 /* MAIN */
 .first-section {
